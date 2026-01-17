@@ -1,0 +1,8 @@
+path: C:/Users/pande/Co-Drive
+
+train: train.txt
+val: val.txt
+test: test.txt
+
+nc: 4
+names: ['prohibitory', 'danger', 'mandatory', 'other']
