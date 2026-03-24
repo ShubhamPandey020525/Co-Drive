@@ -1,106 +1,109 @@
-# 🚦 Co-Drive: AI Traffic Sign Detection System
-
-A high-performance, real-time Traffic Sign Detection system powered by **YOLO11n**, featuring a modern **React + Vite** frontend and a robust **FastAPI** backend with full **GPU Acceleration**.
-
----
-
-## ✨ Overview
-
-**Co-Drive** is a complete end-to-end computer vision solution designed to detect and recognize traffic signs with extreme precision. Originally developed as a Streamlit app, it has now been evolved into a professional-grade full-stack application for better scalability and performance.
-
-### **Core Capabilities:**
-- 📷 **Image Detection**: Upload high-resolution photos for instant sign recognition.
-- 🎞 **Video Detection**: Frame-by-frame processing with web-compatible output.
-- 🎥 **Live Webcam Feed**: Real-time detection with a clean, centralized AI dashboard.
-- ⚡ **GPU Accelerated**: Fully optimized to use NVIDIA CUDA for near-zero latency.
-
----
-
-## 🧠 AI & Model Details
-
-The heart of Co-Drive is a custom-trained **YOLO11n** model, optimized for traffic sign datasets.
-
-| Component | Value |
-|-----------|-------|
-| **Model** | YOLO11n (Ultralytics) |
-| **Input Size** | 960x960 |
-| **Accuracy (mAP)** | **99.05%** (Best Model) |
-| **Inference Speed** | ~19ms - 25ms (on GPU) |
-| **Training Epochs** | 40 |
-| **Patience** | 8 |
-
-*The model `best.pt` is located in `src_backend/weights/`.*
-
----
-
-## 🏗 Modern Architecture
-
-Co-Drive follows an industry-standard separate Frontend/Backend architecture for maximum efficiency.
-
-### **Backend (FastAPI)**
-- **Language**: Python 3.10+
-- **Framework**: FastAPI (Asynchronous)
-- **AI Logic**: Modular `YOLOService` for centralized inference.
-- **Acceleration**: Auto-detection of CUDA for GPU processing.
-- **Location**: `src_backend/`
-
-### **Frontend (React + Vite)**
-- **Stack**: React, TypeScript, Tailwind CSS, Framer Motion.
-- **Design**: Premium dark theme, responsive dashboard, real-time live-feed UI.
-- **Communication**: Vite proxy configured for seamless API calls.
-- **Location**: `src/` (Root)
-
----
-
-## 🚀 Getting Started
-
-### **1. Prerequisites**
-- **Conda** (Recommended for environment management)
-- **Node.js** (For frontend)
-- **NVIDIA GPU** (Optional, but recommended for live detection)
-
-### **2. Backend Setup**
-```bash
-# Create and activate environment
-conda create -n traffic_vision python=3.10 -y
-conda activate traffic_vision
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Start the FastAPI server
-cd src_backend
-python main.py
-```
-*Backend runs on `http://localhost:8000`.*
-
-### **3. Frontend Setup**
-Open a **new terminal**:
-```bash
-# Install NPM packages
-npm install
-
-# Start the Vite development server
-npm run dev
-```
-*Frontend runs on `http://localhost:8080`.*
-
----
-
-## 📂 Project Structure
-- `src/`: Modern React frontend components.
-- `src_backend/`: FastAPI backend (Logic, API, Weights).
-- `src_AI/`: Original AI scripts, training logs, and Streamlit experiments.
-- `requirements.txt`: Centralized Python dependencies.
-- `package.json`: Frontend tech stack and scripts.
-
----
-
-## 🎨 Professional UI Features
-- **Live Indicator**: Blinking status for active webcam feeds.
-- **Loading States**: Visual feedback during AI processing.
-- **Single Viewport**: Clean, centralized detection output for better focus.
-- **Dark Mode**: Modern, developer-friendly interface.
-
----
-*Developed with ❤️ by Shubham Pandey*
+<div align="center"> 
+  
+ # 🚦 YOLO Traffic Sign Detection System 
+  
+ ### A Modern Computer Vision Project with a Premium Full-Stack & Streamlit Architecture 
+  
+ <br/> 
+  
+ <img src="https://img.shields.io/badge/YOLO-Object%20Detection-blue?style=for-the-badge"/> 
+ <img src="https://img.shields.io/badge/FastAPI-Backend-green?style=for-the-badge"/> 
+ <img src="https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black"/> 
+ <img src="https://img.shields.io/badge/PyTorch-CUDA-green?style=for-the-badge"/> 
+  
+ </div> 
+  
+ --- 
+  
+ ## ✨ Overview 
+  
+ This project is a **complete end-to-end Traffic Sign Detection system** built using **YOLO11n**. It features a high-performance **FastAPI backend** with full **GPU acceleration** and a modern **React + Vite frontend** dashboard.
+  
+ It allows users to: 
+ - Upload **images** for instant recognition.
+ - Process **videos** with real-time annotated output.
+ - Use **live webcam detection** via a centralized AI feed.
+  
+ All detections are performed using a **custom-trained YOLO model** with a professional UI design. 
+  
+ --- 
+  
+ ## 🎯 Key Features 
+  
+ ### 📷 Image Detection 
+ - Upload an image (JPG, PNG, JPEG).
+ - Detect traffic signs with precision bounding boxes.
+ - Smart feedback: Displays **“Sign not found”** when no objects are detected.
+  
+ --- 
+  
+ ### 🎞 Video Detection 
+ - High-speed frame-by-frame detection.
+ - Browser-compatible MP4 output with `avc1` encoding.
+ - Real-time progress and results display.
+  
+ --- 
+  
+ ### 🎥 Live Webcam Detection 
+ - Automatic camera initialization.
+ - Real-time AI processing with near-zero latency on GPU.
+ - Clean, centralized viewport for a professional monitoring experience.
+  
+ --- 
+  
+ ## 🧠 Model Details 
+  
+ | Component | Value | 
+ |----------|-------| 
+ | **Model** | YOLO11n | 
+ | **Framework** | Ultralytics YOLO | 
+ | **Accuracy (mAP)** | **99.05%** | 
+ | **Image Size** | 960x960 | 
+ | **Device** | GPU (CUDA) | 
+ | **Inference Speed** | ~19ms - 25ms | 
+  
+ **Best model used for inference: `best.pt`** (located in `src_backend/weights/`)
+  
+ --- 
+  
+ ## 🏗 Architecture & Tech Stack 
+  
+ ### **Backend (FastAPI)**
+ - Modular `YOLOService` for centralized AI logic.
+ - Full GPU/CUDA support for high-speed inference.
+ - Location: `src_backend/`
+  
+ ### **Frontend (React + Vite)**
+ - Responsive dashboard with Tailwind CSS & Framer Motion.
+ - Seamless integration with backend via Vite Proxy.
+ - Location: `src_Frontend/`
+  
+ --- 
+  
+ ## 🚀 Getting Started 
+  
+ ### **1. Backend Setup**
+ ```bash
+ conda create -n traffic_vision python=3.10 -y
+ conda activate traffic_vision
+ pip install -r requirements.txt
+ cd src_backend
+ python main.py
+ ```
+  
+ ### **2. Frontend Setup**
+ ```bash
+ npm install
+ npm run dev
+ ```
+  
+ --- 
+  
+ ## 📂 Project Structure 
+ - `src_Frontend/`: Modern React dashboard.
+ - `src_backend/`: FastAPI server & YOLO integration.
+ - `src_AI/`: Original training scripts, logs, and experimental Streamlit UI.
+ - `requirements.txt`: Centralized dependencies.
+  
+ --- 
+ *Developed with ❤️ by Shubham Pandey*
