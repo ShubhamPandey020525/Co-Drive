@@ -69,9 +69,10 @@
  ## 🏗 Architecture & Tech Stack 
   
  ### **Backend (FastAPI)**
- - Modular `YOLOService` for centralized AI logic.
- - Full GPU/CUDA support for high-speed inference.
- - Location: `src_backend/`
+ - **Entry Point**: `main.py` starts the FastAPI app.
+ - **API Endpoints**: Defined in `api/` for Image, Video, and Webcam predictions.
+ - **Core Logic**: `services/inference.py` handles the YOLO model and GPU acceleration.
+ - **Location**: `src_backend/`
   
  ### **Frontend (React + Vite)**
  - Responsive dashboard with Tailwind CSS & Framer Motion.
@@ -84,16 +85,24 @@
   
  ### **1. Backend Setup**
  ```bash
+ # Create and activate environment
  conda create -n traffic_vision python=3.10 -y
  conda activate traffic_vision
+ 
+ # Install dependencies
  pip install -r requirements.txt
+ 
+ # Run server
  cd src_backend
  python main.py
  ```
   
  ### **2. Frontend Setup**
  ```bash
+ # Install dependencies
  npm install
+ 
+ # Run development server
  npm run dev
  ```
   
@@ -102,8 +111,11 @@
  ## 📂 Project Structure 
  - `src_Frontend/`: Modern React dashboard.
  - `src_backend/`: FastAPI server & YOLO integration.
+   - `api/`: API endpoint definitions.
+   - `services/`: Inference logic.
+   - `weights/`: Trained YOLO weights.
  - `src_AI/`: Original training scripts, logs, and experimental Streamlit UI.
- - `requirements.txt`: Centralized dependencies.
+ - `requirements.txt`: Centralized Python dependencies.
   
  --- 
  *Developed with ❤️ by Shubham Pandey*
