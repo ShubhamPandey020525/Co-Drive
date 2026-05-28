@@ -106,8 +106,8 @@
   
  | Detection Mode | Link to Demonstration |
  |----------|----------|
- | **🎥 Video File Mode** | [▶️ Watch Video Mode Demo](proofs/video%20mode.mp4) |
- | **⚡ Live Webcam Mode** | [▶️ Watch Live Mode Demo](proofs/live%20mode.mp4) |
+ | **🎥 Video File Mode** | [▶️ Watch Video Mode Demo](https://drive.google.com/file/d/1uXI9Ko_oMsDlfazuhGj9a4S8wlfYLy1h/view?usp=sharing) |
+ | **⚡ Live Webcam Mode** | [▶️ Watch Live Mode Demo](https://drive.google.com/file/d/1EqBgLj7VcLbf3QbF3FSvGEd3Qv4pEikJ/view?usp=sharing) |
   
  --- 
   
