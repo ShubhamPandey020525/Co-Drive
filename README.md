@@ -102,8 +102,8 @@
   
  | Mode | Link |
  |----------|----------|
- | **Live Webcam** | [▶️ Watch Live Mode Demo](proofs/live%20mode.mp4) |
  | **Video File** | [▶️ Watch Video Mode Demo](proofs/video%20mode.mp4) |
+ | **Live Webcam** | [▶️ Watch Live Mode Demo](proofs/live%20mode.mp4) |
   
  --- 
   
