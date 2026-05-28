@@ -1,3 +1,4 @@
+--extra-index-url https://download.pytorch.org/whl/cu118
 annotated-doc==0.0.4
 annotated-types==0.7.0
 anyio==4.13.0
@@ -38,10 +39,10 @@ requests==2.32.5
 scipy==1.15.3
 six==1.17.0
 starlette==1.0.0
-sympy==1.14.0
-torch==2.7.1+cu118
-torchaudio==2.7.1+cu118
-torchvision==0.22.1+cu118
+sympy==1.13.1
+torch==2.5.1+cu118
+torchaudio==2.5.1+cu118
+torchvision==0.20.1+cu118
 typing-inspection==0.4.2
 typing_extensions==4.15.0
 ultralytics==8.4.26

@@ -7,18 +7,43 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+.venv
+venv
+env
+ENV
 dist
 dist-ssr
+build
 *.local
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache
+.library
+.ipynb_checkpoints
+
+# AI/ML specific (datasets and large runs)
+src_AI/runs/
+src_AI/__pycache__/
+src_backend/__pycache__/
+src_backend/api/__pycache__/
+src_backend/services/__pycache__/
+
 # Editor directories and files
-.vscode/*
+.vscode/
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# OS
+Thumbs.db
+desktop.ini

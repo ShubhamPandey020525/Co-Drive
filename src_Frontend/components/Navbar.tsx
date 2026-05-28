@@ -15,7 +15,7 @@ const Navbar = () => {
             <Brain className="w-5 h-5 text-primary-foreground" />
           </div>
           <span className="text-lg font-semibold text-foreground">
-            Traffic Sign Detection AI
+            Co-Drive AI
           </span>
         </div>
 
@@ -27,7 +27,7 @@ const Navbar = () => {
             About
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/ShubhamPandey020525/Co-Drive"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"

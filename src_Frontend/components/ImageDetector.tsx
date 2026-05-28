@@ -83,7 +83,7 @@ const ImageDetector = () => {
                       <Loader2 className="w-4 h-4 animate-spin" /> Running AI detection...
                     </span>
                   ) : (
-                    "Detect Traffic Signs"
+                    "Run Co-Drive"
                   )}
                 </button>
               )}

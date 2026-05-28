@@ -6,44 +6,35 @@
 
 @layer base {
   :root {
-    --background: 30 40% 97%;
-    --foreground: 20 25% 12%;
+    --background: 30 50% 98%;
+    --foreground: 20 30% 15%;
 
-    --card: 30 30% 99%;
-    --card-foreground: 20 25% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 30% 15%;
 
-    --popover: 30 30% 99%;
-    --popover-foreground: 20 25% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 30% 15%;
 
     --primary: 25 95% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 25% 93%;
-    --secondary-foreground: 20 25% 12%;
+    --secondary: 35 30% 95%;
+    --secondary-foreground: 20 30% 15%;
 
-    --muted: 30 20% 92%;
+    --muted: 35 20% 92%;
     --muted-foreground: 20 10% 45%;
 
-    --accent: 350 70% 50%;
+    --accent: 15 90% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 30 20% 88%;
-    --input: 30 20% 88%;
+    --border: 30 20% 90%;
+    --input: 30 20% 90%;
     --ring: 25 95% 50%;
 
-    --radius: 0.75rem;
-
-    --sidebar-background: 30 30% 96%;
-    --sidebar-foreground: 20 25% 12%;
-    --sidebar-primary: 25 95% 50%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 350 70% 50%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 30 20% 88%;
-    --sidebar-ring: 25 95% 50%;
+    --radius: 1rem;
   }
 }
 
@@ -55,16 +46,17 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
+    background-color: hsl(30 50% 98%);
   }
 }
 
 @layer utilities {
   .glass {
-    @apply bg-white/60 backdrop-blur-xl border border-white/80;
+    @apply bg-white/40 backdrop-blur-xl border border-white/60 shadow-sm;
   }
 
   .glass-strong {
-    @apply bg-white/70 backdrop-blur-2xl border border-white/90;
+    @apply bg-white/60 backdrop-blur-2xl border border-white/80 shadow-md;
   }
 
   .gradient-text {

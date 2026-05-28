@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 text-center">
         <div className="flex items-center justify-center gap-2 mb-2">
           <Brain className="w-5 h-5 text-primary" />
-          <span className="text-foreground font-semibold">Traffic Sign Detection AI</span>
+          <span className="text-foreground font-semibold">Co-Drive AI</span>
         </div>
         <p className="text-sm text-muted-foreground">Powered by YOLO Computer Vision</p>
       </div>

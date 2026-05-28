@@ -1,6 +1,6 @@
 <div align="center"> 
   
- # 🚦 YOLO Traffic Sign Detection System 
+ # 🚦  Co-Drive 
   
  ### A Modern Computer Vision Project with a Premium Full-Stack & Streamlit Architecture 
   
@@ -17,7 +17,7 @@
   
  ## ✨ Overview 
   
- This project is a **complete end-to-end Traffic Sign Detection system** built using **YOLO11n**. It features a high-performance **FastAPI backend** with full **GPU acceleration** and a modern **React + Vite frontend** dashboard.
+ This project is a **complete end-to-end Co-Drive system** built using **YOLO11n**. It features a high-performance **FastAPI backend** with full **GPU acceleration** and a modern **React + Vite frontend** dashboard.
   
  It allows users to: 
  - Upload **images** for instant recognition.
@@ -32,7 +32,7 @@
   
  ### 📷 Image Detection 
  - Upload an image (JPG, PNG, JPEG).
- - Detect traffic signs with precision bounding boxes.
+ - Run Co-Drive with precision bounding boxes.
  - Smart feedback: Displays **“Sign not found”** when no objects are detected.
   
  --- 
@@ -81,13 +81,30 @@
   
  --- 
   
+ ## 📸 Proof of Work 
+  
+ ### **Landing Page** 
+ ![Landing Page](proofs/landing%20page.png) 
+  
+ ### **Detection in Action** 
+ <div align="center"> 
+ <img src="proofs/2nd%20page.png" width="45%"/> 
+ <img src="proofs/3rd%20page.png" width="45%"/> 
+ </div> 
+  
+ ### **Video Demonstrations** 
+ - [Live Mode Demo](proofs/live%20mode.mp4) 
+ - [Video Mode Demo](proofs/video%20mode.mp4) 
+  
+ --- 
+  
  ## 🚀 Getting Started 
   
  ### **1. Backend Setup**
  ```bash
  # Create and activate environment
- conda create -n traffic_vision python=3.10 -y
- conda activate traffic_vision
+ conda create -n co-drive python=3.10 -y
+ conda activate co-drive
  
  # Install dependencies
  pip install -r requirements.txt

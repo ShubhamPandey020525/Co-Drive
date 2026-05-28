@@ -9,9 +9,9 @@ interface ModeSelectorProps {
 }
 
 const modes: { id: DetectionMode; icon: LucideIcon; title: string; description: string }[] = [
-  { id: "image", icon: Image, title: "Image Detection", description: "Upload a photo to detect traffic signs instantly" },
-  { id: "video", icon: Video, title: "Video Detection", description: "Analyze video files frame by frame for sign detection" },
-  { id: "camera", icon: Camera, title: "Live Camera", description: "Use your webcam for real-time traffic sign detection" },
+  { id: "image", icon: Image, title: "Image Detection", description: "Upload a photo to use Co-Drive instantly" },
+  { id: "video", icon: Video, title: "Video Detection", description: "Analyze video files frame by frame for Co-Drive" },
+  { id: "camera", icon: Camera, title: "Live Camera", description: "Use your webcam for real-time Co-Drive" },
 ];
 
 const ModeSelector = ({ activeMode, onModeChange }: ModeSelectorProps) => {
