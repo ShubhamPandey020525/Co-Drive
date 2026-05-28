@@ -86,15 +86,24 @@
  ### **Landing Page** 
  ![Landing Page](proofs/landing%20page.png) 
   
- ### **Detection in Action** 
+ ### **🚀 Detection in Action** 
+ > Large-scale visualization of the AI model identifying traffic signs with high confidence.
+  
  <div align="center"> 
- <img src="proofs/2nd%20page.png" width="45%"/> 
- <img src="proofs/3rd%20page.png" width="45%"/> 
+ <img src="proofs/2nd%20page.png" width="90%" style="margin-bottom: 20px; border-radius: 10px; shadow: 10px;"/> 
+ <br/>
+ <img src="proofs/3rd%20page.png" width="90%" style="border-radius: 10px; shadow: 10px;"/> 
  </div> 
   
- ### **Video Demonstrations** 
- - [Live Mode Demo](proofs/live%20mode.mp4) 
- - [Video Mode Demo](proofs/video%20mode.mp4) 
+ ### **🎥 Video Demonstrations** 
+ 
+ > [!IMPORTANT]
+ > **Check out the system in real-time motion!**
+  
+ | Mode | Link |
+ |----------|----------|
+ | **Live Webcam** | [▶️ Watch Live Mode Demo](proofs/live%20mode.mp4) |
+ | **Video File** | [▶️ Watch Video Mode Demo](proofs/video%20mode.mp4) |
   
  --- 
   
